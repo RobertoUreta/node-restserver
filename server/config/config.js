@@ -21,3 +21,18 @@ if (process.env.NODE_ENV === 'dev') {
 }
 
 process.env.URLDB = urlDB;
+
+//=============
+//VENCIMIENTO TOKEN
+//=============
+//60 SEG
+//60 MIN
+//24 HORAS
+//30 DIAS
+process.env.CADUCIDAD_TOKEN = 60 * 60 * 24 * 30;
+
+//=============
+//SEED DE AUTENTICACION
+//=============
+
+process.env.SEED = process.env.SEED || 'seed-desarrollo';
